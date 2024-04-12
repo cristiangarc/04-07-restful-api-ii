@@ -1,5 +1,6 @@
 const request = require('supertest');
-const app = require('../index'); // Adjust the path to where your Express app is exported
+const index = require('../index'); // Adjust the path to where your Express app is exported
+const app = index.app;
 
 describe('Customer Resource CRUD Operations', () => {
   let newCustomerId;
